@@ -1,0 +1,1 @@
+FROM python:3.12-slim\n\nWORKDIR /app\n\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\n\nCOPY . .\n\nEXPOSE 8501\n\nCMD [\"streamlit\", \"run\", \"app.py\", \"--server.port=8501\", \"--server.headless=true\", \"--server.address=0.0.0.0\"]
