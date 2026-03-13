@@ -1,0 +1,15 @@
+{
+  &quot;version&quot;: 2,
+  &quot;builds&quot;: [
+    {
+      &quot;src&quot;: &quot;app.py&quot;,
+      &quot;use&quot;: &quot;@vercel/python&quot;
+    }
+  ],
+  &quot;routes&quot;: [
+    {
+      &quot;src&quot;: &quot;/(.*)&quot;,
+      &quot;dest&quot;: &quot;app.py&quot;
+    }
+  ]
+}
