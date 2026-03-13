@@ -4,7 +4,7 @@ import duckdb
 import io
 import pandas as pd
 
-st.set_page_config(page_title=&quot;Palantir FDE Sim v0.1&quot;, page_icon=&quot;🛡️&quot;, layout=&quot;wide&quot;)
+st.set_page_config(page_title="Palantir FDE Sim v0.1", page_icon="🛡️", layout="wide")
 
 st.title(&quot;🛡️ Palantir FDE Simulator v0.1 MVP&quot;)
 
@@ -14,7 +14,7 @@ tab1, tab2, tab3 = st.tabs([&quot;📊 Dataset ETL Sim&quot;, &quot;📚 Case St
 
 with tab1:
     st.header(&quot;Upload Dataset (CSV/JSON)&quot;)
-    uploaded_file = st.file_uploader(&quot;Choose a CSV or JSON file&quot;, type=[&#x27;csv&#x27;, &#x27;json&#x27;, &#x27;jsonl&#x27;])
+    uploaded_file = st.file_uploader("Choose a CSV or JSON file", type=['csv', 'json', 'jsonl'])
 
     if uploaded_file is not None:
         try:
